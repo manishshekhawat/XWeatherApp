@@ -69,21 +69,23 @@ export const WeatherApp = () => {
             marginTop: "100px",
           }}
         >
+        <div style={boxStyle}>
+            <h3>Temperature</h3>
+            <p>{weatherData.current.temp_c}°C</p>
+          </div>
+          <div style={boxStyle}>
+            <h3>Humidity</h3>
+            <p>{weatherData.current.humidity}%</p>
+          </div>
           <div style={boxStyle}>
             <h3>Condition</h3>
             <p>{weatherData.current.condition.text}</p>
           </div>
-          <div style={boxStyle}>
-            <h3>Temperature</h3>
-            <p>{weatherData.current.temp_c}</p>
-          </div>
-          <div style={boxStyle}>
-            <h3>Humidity</h3>
-            <p>{weatherData.current.humidity}</p>
-          </div>
+          
+          
           <div style={boxStyle}>
             <h3>Wind Speed</h3>
-            <p>{weatherData.current.wind_kph}</p>
+            <p>{weatherData.current.wind_kph} kph</p>
           </div>
         </div>
       )}
