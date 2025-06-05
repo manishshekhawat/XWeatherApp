@@ -43,7 +43,7 @@ export const WeatherApp = () => {
         <button onClick={handleSearchButton}>Search</button>
       </div>
 
-      {loading && <p style={{ textAlign: "center" }}>Loading data…</p>}
+      {loading && <p style={{ textAlign: "center" }}>Loading data...</p>}
 
       {weatherData?.current && (
         <div className="weather-cards">
